@@ -1,0 +1,3 @@
+-r server/requirements.txt
+-r NpuQuilly/requirements.txt
+pytest>=8,<10

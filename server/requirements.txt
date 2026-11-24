@@ -1,0 +1,10 @@
+# Option A backend: OpenVINO GenAI on Intel Xe3 GPU (default) / NPU (battery) / CPU (fallback)
+# Tested with Python 3.12. Keep all three OpenVINO package versions aligned.
+openvino==2026.1.0
+openvino-genai==2026.1.0.0
+openvino-tokenizers==2026.1.0.0
+fastapi>=0.110,<1
+pydantic>=2.9,<3
+uvicorn>=0.29,<1
+huggingface_hub>=0.23,<3
+pyyaml>=6.0,<7

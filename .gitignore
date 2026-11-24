@@ -1,0 +1,52 @@
+# Local work, diagnostics, and application settings
+/.local/
+/.logs/
+/.test-config/
+/QwenLocal/
+.env
+.env.*
+config.json
+*.log
+*.pid
+*.tmp
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Downloaded models, runtimes, and compilation caches
+/server/models/
+/server/.ovcache/
+.cache/
+*.gguf
+*.safetensors
+*.bin
+*.blob
+*.cl_cache
+*.dll
+*.exe
+
+# Python and build products
+/.python312/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/.pytest-*/
+/.coverage
+/NpuQuilly/build/
+/NpuQuilly/dist/
+/NpuQuilly/*.spec
+
+# Evaluation output may include input passages and model responses
+/eval/reports/
+/eval/experiments/
+/eval/*validation*.json
+/eval/results_*.json
+/npuquilly-eval-*/
+
+# Editor and OS metadata
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

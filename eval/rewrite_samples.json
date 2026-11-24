@@ -1,0 +1,20 @@
+[
+  {"id": "r01", "category": "wordy-email",
+   "goal": "Shorter, professional, same request",
+   "input": "Hi team, I just wanted to reach out and let you know that due to the fact that the client meeting has been moved up to Thursday morning, we are going to need to have the draft proposal finished and ready for review by end of day Wednesday at the latest, if at all possible. Thanks so much for all of your hard work on this!"},
+  {"id": "r02", "category": "choppy-paragraph",
+   "goal": "Better flow, varied sentence structure, same facts",
+   "input": "The server migration started on Friday. It took longer than expected. The database was bigger than estimated. We finished on Sunday night. There was no data loss. The monitoring caught two issues. We fixed them quickly."},
+  {"id": "r03", "category": "informal-to-professional",
+   "goal": "Professional tone for a client-facing status update",
+   "input": "hey, quick update on the bug u reported - we looked into it and yeah it was broken lol. fixed it this morning, should be fine now. lmk if u see anything weird."},
+  {"id": "r04", "category": "passive-heavy",
+   "goal": "Active voice, crisper, same meaning",
+   "input": "The decision was made by the committee after the risks had been evaluated by the engineering team. It was agreed that the rollout will be postponed until the issues that were identified during testing have been resolved by the developers."},
+  {"id": "r05", "category": "run-on-sentence",
+   "goal": "Split into clear sentences without losing detail",
+   "input": "Although the new cache layer reduced average response times by almost forty percent in the load tests we ran last week which is great news for the launch timeline there is still a concern about cold-start behavior during traffic spikes which the team is currently investigating with the help of the infrastructure group."},
+  {"id": "r06", "category": "terse-notes",
+   "goal": "Expand into a coherent short paragraph",
+   "input": "Q3 planning. Priorities: perf, onboarding, docs. Perf: p95 down 30%. Onboarding: cut steps 9->5. Docs: API ref outdated, rewrite. Owners TBD Friday."}
+]

@@ -1,0 +1,24 @@
+# NpuQuilly model registry. Served alias -> OV IR dir + device + role.
+# Grammar-first scope: small general instruct models only (NOT grammar-only fine-tunes).
+device_default: GPU
+cache_dir: ./.ovcache
+models:
+  - alias: grammar-fast            # primary (GPU)
+    repo: OpenVINO/Phi-4-mini-instruct-int4-ov
+    dir: models/phi-4-mini-instruct-int4-ov
+    device: GPU
+    role: grammar
+    notes: ~3.8B, MIT, INT4_ASYM g64 AWQ, OV 2025.1+
+  - alias: rewrite-alt             # challenger (GPU, rewrite style)
+    repo: Aditya02/Qwen3-4B-Instruct-2507-ov-int4
+    dir: models/qwen3-4b-instruct-2507-ov-int4
+    device: GPU
+    role: rewrite
+    notes: Qwen3-4B-Instruct-2507 INT4, Apache-2.0
+  - alias: grammar-battery         # same class, NPU-tested sym build for unplugged use
+    npu_compatible: true
+    repo: Fede2782/Phi-4-mini-instruct-int4-cw-ov
+    dir: models/phi-4-mini-instruct-int4-cw-ov
+    device: NPU
+    role: grammar
+    notes: int4_sym, tested OV GenAI 2025.4.1 + NPU driver 32.0.100.4514, MAX_PROMPT_LEN 1024

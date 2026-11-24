@@ -1,0 +1,22 @@
+[
+  {"id": "g01", "category": "subject-verb", "input": "She dont like the apples.", "expected": "She doesn't like the apples."},
+  {"id": "g02", "category": "subject-verb", "input": "The committee have decided to postpone there meeting.", "expected": "The committee has decided to postpone their meeting."},
+  {"id": "g03", "category": "tense", "input": "Me and him was happy about the results.", "expected": "He and I were happy about the results."},
+  {"id": "g04", "category": "articles", "input": "Their going to store, its a nice day.", "expected": "They're going to the store; it's a nice day."},
+  {"id": "g05", "category": "spelling", "input": "The meeting is postponed until next week due to unforseen circumstances.", "expected": "The meeting is postponed until next week due to unforeseen circumstances."},
+  {"id": "g06", "category": "punctuation", "input": "this is a bad sentence", "expected": "This is a bad sentence."},
+  {"id": "g07", "category": "capitalization", "input": "we need specs for the new api endpoint.", "expected": "We need specs for the new API endpoint."},
+  {"id": "g08", "category": "homophones", "input": "You're grammar is better then mine.", "expected": "Your grammar is better than mine."},
+  {"id": "g09", "category": "agreement", "input": "Each of the participants have submitted their report.", "expected": "Each of the participants has submitted their report."},
+  {"id": "g10", "category": "tense", "input": "I have went to the office yesterday.", "expected": "I went to the office yesterday."},
+  {"id": "g11", "category": "wordiness", "input": "Due to the fact that it was raining, the event was cancelled.", "expected": "Because it was raining, the event was cancelled."},
+  {"id": "g12", "category": "apostrophes", "input": "The dogs tail wagged when its owner arrived.", "expected": "The dog's tail wagged when its owner arrived."},
+  {"id": "g13", "category": "no-error", "input": "This is a good sentence. This is another good sentence.", "expected": "This is a good sentence. This is another good sentence."},
+  {"id": "g14", "category": "quotes", "input": "She said \"we need specs.\".", "expected": "She said \"we need specs.\""},
+  {"id": "g15", "category": "long", "input": "The team, which have been working overtime for the past three weeks, are exhausted but they is proud of what they has accomplished.", "expected": "The team, which has been working overtime for the past three weeks, is exhausted, but they are proud of what they have accomplished."},
+  {"id": "g16", "category": "prepositions", "input": "He is married with a doctor since five years.", "expected": "He has been married to a doctor for five years."},
+  {"id": "g17", "category": "plurals", "input": "The datas show a significant phenomena.", "expected": "The data show a significant phenomenon."},
+  {"id": "g18", "category": "email", "input": "hi team, please find attached the report let me know if you have any question.", "expected": "Hi team, please find the attached report. Let me know if you have any questions."},
+  {"id": "g19", "category": "double-negative", "input": "I don't need no help with this task.", "expected": "I don't need any help with this task."},
+  {"id": "g20", "category": "comparative", "input": "This approach is more better than the previous one.", "expected": "This approach is better than the previous one."}
+]

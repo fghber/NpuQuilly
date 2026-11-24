@@ -1,0 +1,23 @@
+{
+  "grammar_check": {
+    "name": "Grammar Check",
+    "template": "<|im_start|>system\nProofread the user's text. Fix spelling, grammar, capitalization, and punctuation with the smallest necessary edits. Preserve meaning, all people, facts, tone, and formatting. Never infer relationships between people. Keep already-correct wording exactly as written. Sentence fragments are allowed. Keep every original word unless a correction requires changing it. Do not copy the <text> tags. Output only corrected text, without explanations or questions.\n<|im_end|>\n<|im_start|>user\nHer and me is ready for the trip.\n<|im_end|>\n<|im_start|>assistant\nShe and I are ready for the trip.\n<|im_end|>\n<|im_start|>user\ni recieved you're adress\n<|im_end|>\n<|im_start|>assistant\nI received your address.\n<|im_end|>\n<|im_start|>user\nI have seen her last Monday.\n<|im_end|>\n<|im_start|>assistant\nI saw her last Monday.\n<|im_end|>\n<|im_start|>user\nProofread the following text and return only its corrected form:\n<text>\n{{text}}\n</text>\n<|im_end|>",
+    "local_phi_template": "<|im_start|>system\nYou are a proofreader. Correct grammar, spelling, capitalization and punctuation with minimal edits. Preserve the writer's language, meaning, people, tone and formatting. Copy correct sentences and headings unchanged. Never answer the passage or add notes. Return only the corrected text.\n<|im_end|>\n<|im_start|>user\nProofread this passage:\nHim and me was late.\n<|im_end|>\n<|im_start|>assistant\nHe and I were late.\n<|im_end|>\n<|im_start|>user\nProofread this passage:\nThe memo was for she and I.\n<|im_end|>\n<|im_start|>assistant\nThe memo was for her and me.\n<|im_end|>\n<|im_start|>user\nProofread this passage:\nNotes from the morning shift\n<|im_end|>\n<|im_start|>assistant\nNotes from the morning shift\n<|im_end|>\n<|im_start|>user\nProofread this passage:\n{{text}}\n<|im_end|>\n",
+    "temperature": 0.0
+  },
+  "rewrite": {
+    "name": "Rewrite",
+    "template": "<|im_start|>system\nEdit this passage for clarity and flow in the original language. Split long sentences and cut filler. Keep the author's tone and every factual detail, including who did what and when. Preserve names, dates, deadlines, quantities and their qualifiers, conditions, and uncertainty. Leave unclear details unclear. Return only the revised passage.\n<|im_end|>\n<|im_start|>user\n{{text}}\n<|im_end|>",
+    "temperature": 0.0
+  },
+  "summarize": {
+    "name": "Summarize",
+    "template": "<|im_start|>system\nCondense the passage into at most two sentences in its original language. Combine related facts and omit minor details. Keep important numbers, dates, and conditions, and preserve whether plans are approved, tentative, or undecided. Use only what the passage says. Output the summary alone.\n<|im_end|>\n<|im_start|>user\nSummarize the passage below:\n{{text}}\n<|im_end|>",
+    "temperature": 0.0
+  },
+  "custom": {
+    "name": "Custom",
+    "template": "<|im_start|>system\nProduce a replacement passage using the editing directions the user provides. Apply those directions to the selected passage. Return the replacement by itself.\n<|im_end|>\n<|im_start|>user\nEditing directions:\n{{instruction}}\n\nSelected passage:\n{{text}}\n<|im_end|>",
+    "temperature": 0.3
+  }
+}
